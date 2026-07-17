@@ -266,7 +266,7 @@ We report dataset ranges, split timestamps, model settings, optimization hyperpa
 
 ## Code Availability
 
-The source code, plotting scripts, environment specification, and revision outputs used by this manuscript version are organized in the current local workspace package. We retain the project homepage `https://github.com/aszybaiye/Gated-Fusion-of-LSTM-and-Transformer-for-Robust-Multi-Step-Electricity-Demand-Forecasting` as a project entry page, but we do not cite a fixed public commit for the current revision unless a synchronized archival upload becomes directly accessible. The current package materials include per-seed CSV files, raw rolling-origin predictions, DM-test details, gate-analysis summaries, and DLinear rerun/audit tables together with a package manifest for verification.
+The source code, scripts, environment specification, and revision outputs are publicly available at [repository URL](https://github.com/aszybaiye/Parallel-Gated-Fusion-of-LSTM-and-Transformer-for-Multi-Step-Electricity-Demand-Forecasting). The current package materials include per-seed CSV files, raw rolling-origin predictions, DM-test details, gate-analysis summaries, and DLinear rerun/audit tables together with a package manifest for verification.
 
 ## Funding
 
