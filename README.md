@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/30080496/README.md)
+[README.md](https://github.com/user-attachments/files/30108727/README.md)
 # Electricity Demand Forecasting Project
 
 This repository contains the local experimental implementation of PGF-Net and its main comparison baselines for multi-step electricity demand forecasting. The file structure, experiment entry points, and result directories described below reflect the content that currently exists in the release package.
@@ -61,7 +61,7 @@ In the current manuscript setup:
 - The Weekly dataset contains only `load_forecast`, so it is treated as a pre-dispatch forecast trajectory rather than realized metered demand.
 - The target column in `continuous dataset.csv` is `nat_demand`.
 
-If the raw data files are not distributed in this release package, please refer to the accompanying documentation for data availability and source information.
+Preprocessing logic is implemented in `src/data_preprocessing.py`. The current release package does not include a standalone universal dataset download script; raw data should be obtained from the documented sources and placed in the expected `data/` location before running the experiments.
 
 ## Main Experiment Entry
 
@@ -76,7 +76,7 @@ The primary experiment script is `src/simulate_experiment.py`. It:
 ### Run the UCI Benchmark
 
 ```bash
-python src/simulate_experiment.py --dataset uci --device cpu --seeds 0,42,123 --models PGFNet,DLinear,LSTM,PatchTST,SeasonalNaive
+python src/simulate_experiment.py --dataset uci --device cpu --seeds 0,42,123,456,789 --models PGFNet,DLinear,LSTM,PatchTST,SeasonalNaive
 ```
 
 ### Run the Weekly Pre-dispatch Benchmark
